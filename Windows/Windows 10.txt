@@ -1,0 +1,3 @@
+slmgr /ipk AQUÍ-ESCRIBE-LA-CLAVE
+slmgr /skms kms8.msguides.com or kms.msguides.com
+slmgr /ato

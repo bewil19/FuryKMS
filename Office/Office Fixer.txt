@@ -1,0 +1,30 @@
+*PASO 1: (VALIDAR ESTADO LICENCIAS) 
+
+(A1) cscript "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" /dstatus
+(B1) cscript "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" /dstatus
+------------------------------------------------------------------------------
+*PASO 2: (QUITAR LICENCIAS)
+
+(A2) cscript "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" /unpkey:6MWKP
+(B2) cscript "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" /unpkey:VMFTK
+------------------------------------------------------------------------------
+*PASO 3: (RECTIFICAR ESTADO LICENCIAS CON EL PASO 1)ABRIR OFFICE
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+*PASO 4: (SELECCIONAR RUTA OFFICE) 
+
+cd /d %ProgramFiles%\Microsoft Office\Office16
+cd /d %ProgramFiles(x86)%\Microsoft Office\Office16
+------------------------------------------------------------------------------
+*PASO 5: (HACER QUE FUNCIONE)
+
+cd C:\Program Files\Microsoft Office\Office16
+cscript ospp.vbs /inpkey:NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP
+cscript ospp.vbs /sethst:kms.srv.crsoo.com
+cscript ospp.vbs /act
+------------------------------------------------------------------------------
+(PROCESO PARA EL 2016)
+APLICAN LOS MISMOS PASOS DEL 1 AL 4 Y EL PASO 5 solo es reemplazar
+el otro serial y colocan este XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
