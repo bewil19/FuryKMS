@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="infoLbl.Text" xml:space="preserve">
+    <value>I’m always aware of the MS Guides servers and will be
+updating them as they open and close respectively.
+It’s recommended to use the servers marked as NOT 
+RECOMMENDED as the last option, since these servers are 
+unstable; if these are no longer operational, I’ll remove them
+permanently and record them in this program's documentation
+as a history.</value>
+  </data>
 </root>

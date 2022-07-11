@@ -199,16 +199,15 @@
             // 
             this.shellText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.shellText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.shellText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.shellText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shellText.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shellText.ForeColor = System.Drawing.Color.White;
-            this.shellText.Location = new System.Drawing.Point(145, 216);
+            this.shellText.Location = new System.Drawing.Point(155, 216);
             this.shellText.Multiline = true;
             this.shellText.Name = "shellText";
             this.shellText.ReadOnly = true;
             this.shellText.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.shellText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.shellText.Size = new System.Drawing.Size(655, 304);
+            this.shellText.Size = new System.Drawing.Size(645, 304);
             this.shellText.TabIndex = 4;
             // 
             // panel3

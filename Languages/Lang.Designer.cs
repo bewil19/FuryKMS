@@ -106,6 +106,20 @@ namespace FuryKMS.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a I’m always aware of the MS Guides servers and will be
+        ///updating them as they open and close respectively.
+        ///It’s recommended to use the servers marked as UNSTABLE 
+        ///as the last option, since these servers are unstable; if these are
+        ///no longer operational, I’ll remove them permanently and record
+        ///them in this program&apos;s documentation as a history..
+        /// </summary>
+        internal static string infoLbl {
+            get {
+                return ResourceManager.GetString("infoLbl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a KMS Servers.
         /// </summary>
         internal static string kmsLbl {

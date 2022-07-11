@@ -230,4 +230,12 @@ In the rare case that your antivirus detects it as one, disable it momentarily t
   <data name="removingGeneric" xml:space="preserve">
     <value>Removing GENERIC Licenses...</value>
   </data>
+  <data name="infoLbl" xml:space="preserve">
+    <value>I’m always aware of the MS Guides servers and will be
+updating them as they open and close respectively.
+It’s recommended to use the servers marked as UNSTABLE 
+as the last option, since these servers are unstable; if these are
+no longer operational, I’ll remove them permanently and record
+them in this program's documentation as a history.</value>
+  </data>
 </root>

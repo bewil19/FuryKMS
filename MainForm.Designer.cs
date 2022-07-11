@@ -30,22 +30,23 @@ namespace FuryKMS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.titlePnl = new System.Windows.Forms.Panel();
             this.appvLbl = new System.Windows.Forms.Label();
             this.netLbl = new System.Windows.Forms.Label();
             this.osLbl = new System.Windows.Forms.Label();
             this.lblTitle2 = new System.Windows.Forms.Label();
             this.lblTitle1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuPnl = new System.Windows.Forms.Panel();
-            this.childPnl = new System.Windows.Forms.Panel();
             this.officeBtn = new System.Windows.Forms.Button();
             this.windowsBtn = new FontAwesome.Sharp.IconButton();
             this.optionsBtn = new FontAwesome.Sharp.IconButton();
             this.homeBtn = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.childPnl = new System.Windows.Forms.Panel();
             this.titlePnl.SuspendLayout();
-            this.menuPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuPnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // titlePnl
@@ -123,6 +124,16 @@ namespace FuryKMS
             this.lblTitle1.TabIndex = 1;
             this.lblTitle1.Text = "Fury";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FuryKMS.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(112, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // menuPnl
             // 
             this.menuPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
@@ -136,15 +147,6 @@ namespace FuryKMS
             this.menuPnl.Size = new System.Drawing.Size(115, 590);
             this.menuPnl.TabIndex = 1;
             this.menuPnl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuPnl_MouseDown);
-            // 
-            // childPnl
-            // 
-            this.childPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.childPnl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.childPnl.Location = new System.Drawing.Point(115, 70);
-            this.childPnl.Name = "childPnl";
-            this.childPnl.Size = new System.Drawing.Size(800, 590);
-            this.childPnl.TabIndex = 2;
             // 
             // officeBtn
             // 
@@ -227,15 +229,14 @@ namespace FuryKMS
             this.homeBtn.UseVisualStyleBackColor = true;
             this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
-            // pictureBox1
+            // childPnl
             // 
-            this.pictureBox1.Image = global::FuryKMS.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(112, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.childPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.childPnl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.childPnl.Location = new System.Drawing.Point(115, 70);
+            this.childPnl.Name = "childPnl";
+            this.childPnl.Size = new System.Drawing.Size(800, 590);
+            this.childPnl.TabIndex = 2;
             // 
             // MainForm
             // 
@@ -246,6 +247,7 @@ namespace FuryKMS
             this.Controls.Add(this.menuPnl);
             this.Controls.Add(this.titlePnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -254,8 +256,8 @@ namespace FuryKMS
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.titlePnl.ResumeLayout(false);
             this.titlePnl.PerformLayout();
-            this.menuPnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuPnl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

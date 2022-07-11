@@ -132,19 +132,19 @@ namespace FuryKMS.UserControls
                     break;
 
                 case 1:
-                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms8.msguides.com; cscript //nologo slmgr.vbs /ato");
-                    break;
-
-                case 2:
-                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms9.msguides.com; cscript //nologo slmgr.vbs /ato");
-                    break;
-
-                case 3:
                     shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms s8.uk.to; cscript //nologo slmgr.vbs /ato");
                     break;
 
-                case 4:
+                case 2:
                     shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms s9.us.to; cscript //nologo slmgr.vbs /ato");
+                    break;
+                // DEPRECATED | USE ONLY IN CASE OF EMERGENCY
+                case 3:
+                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms8.msguides.com; cscript //nologo slmgr.vbs /ato");
+                    break;
+
+                case 4:
+                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms9.msguides.com; cscript //nologo slmgr.vbs /ato");
                     break;
             }
         }

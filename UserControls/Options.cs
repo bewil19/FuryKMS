@@ -4,6 +4,7 @@ using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Text;
+using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
@@ -46,15 +47,21 @@ namespace FuryKMS.UserControls
 
         public void LoadLanguage()
         {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Settings.Default.Language);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(Settings.Default.Language);
             langLbl.Text = Lang.langLbl;
             updatesLbl.Text = Lang.updatesLbl;
             updatesBtn.Text = Lang.updatesBtn;
             contactLbl.Text = Lang.contactLbl;
             aboutLbl.Text = Lang.aboutLbl;
+            infoLbl.Text = Lang.infoLbl;
             Fix.LoadLanguage();
         }
 
+
+        private void updatesBtn_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/FuryGreenwood/FuryKMS");
+        }
         private void gitBtn_Click(object sender, EventArgs e)
         {
             Process.Start("https://github.com/FuryGreenwood");
@@ -74,6 +81,10 @@ namespace FuryKMS.UserControls
         private void msBtn_Click(object sender, EventArgs e)
         {
             Process.Start("https://msguides.com");
+        }
+        private void serversBtn_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://kms.msguides.com");
         }
 
         private void langDrop_SelectedIndexChanged(object sender, EventArgs e)

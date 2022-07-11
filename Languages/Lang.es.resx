@@ -231,4 +231,13 @@ sin problemas.</value>
   <data name="removingGeneric" xml:space="preserve">
     <value>Removiendo Licencias GENÉRICAS...</value>
   </data>
+  <data name="infoLbl" xml:space="preserve">
+    <value>Estoy siempre al tanto de los servidores de MS Guides y los
+estaré actualizando a medida que se cierren y abren 
+respectivamente. Se recomienda usar los servidores marcados
+como UNSTABLE como última opción, ya que estos servidores
+se encentran inestables; si estos ya no están operativos, los
+eliminaré de forma permanente y los estaré registrando en la
+documentación de este programa como un historial.</value>
+  </data>
 </root>

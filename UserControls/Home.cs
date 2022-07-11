@@ -1,9 +1,9 @@
-﻿using System;
+﻿using FuryKMS.Languages;
+using FuryKMS.Properties;
+using System;
 using System.Globalization;
 using System.Threading;
 using System.Windows.Forms;
-using FuryKMS.Properties;
-using FuryKMS.Languages;
 
 namespace FuryKMS.UserControls
 {

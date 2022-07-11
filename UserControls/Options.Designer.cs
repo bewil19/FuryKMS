@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Options));
             this.langLbl = new System.Windows.Forms.Label();
             this.langDrop = new System.Windows.Forms.ComboBox();
             this.updatesLbl = new System.Windows.Forms.Label();
@@ -41,6 +42,8 @@
             this.msBtn = new FontAwesome.Sharp.IconButton();
             this.logoBox = new System.Windows.Forms.PictureBox();
             this.rightsLbl = new System.Windows.Forms.Label();
+            this.infoLbl = new System.Windows.Forms.Label();
+            this.serversBtn = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,6 +102,7 @@
             this.updatesBtn.TabIndex = 10;
             this.updatesBtn.Text = "Check Updates";
             this.updatesBtn.UseVisualStyleBackColor = false;
+            this.updatesBtn.Click += new System.EventHandler(this.updatesBtn_Click);
             // 
             // contactLbl
             // 
@@ -248,11 +252,45 @@
             this.rightsLbl.TabIndex = 19;
             this.rightsLbl.Text = "FURY GREENWOOD - 2022";
             // 
+            // infoLbl
+            // 
+            this.infoLbl.AutoSize = true;
+            this.infoLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoLbl.ForeColor = System.Drawing.Color.White;
+            this.infoLbl.Location = new System.Drawing.Point(405, 373);
+            this.infoLbl.Name = "infoLbl";
+            this.infoLbl.Size = new System.Drawing.Size(376, 119);
+            this.infoLbl.TabIndex = 20;
+            this.infoLbl.Text = resources.GetString("infoLbl.Text");
+            // 
+            // serversBtn
+            // 
+            this.serversBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(180)))), ((int)(((byte)(16)))));
+            this.serversBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.serversBtn.FlatAppearance.BorderSize = 0;
+            this.serversBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.serversBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.serversBtn.ForeColor = System.Drawing.Color.White;
+            this.serversBtn.IconChar = FontAwesome.Sharp.IconChar.Microsoft;
+            this.serversBtn.IconColor = System.Drawing.Color.White;
+            this.serversBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.serversBtn.IconSize = 40;
+            this.serversBtn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.serversBtn.Location = new System.Drawing.Point(19, 523);
+            this.serversBtn.Name = "serversBtn";
+            this.serversBtn.Size = new System.Drawing.Size(250, 40);
+            this.serversBtn.TabIndex = 21;
+            this.serversBtn.Text = "MS Guides Servers";
+            this.serversBtn.UseVisualStyleBackColor = false;
+            this.serversBtn.Click += new System.EventHandler(this.serversBtn_Click);
+            // 
             // Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Controls.Add(this.serversBtn);
+            this.Controls.Add(this.infoLbl);
             this.Controls.Add(this.rightsLbl);
             this.Controls.Add(this.logoBox);
             this.Controls.Add(this.msBtn);
@@ -290,5 +328,7 @@
         private FontAwesome.Sharp.IconButton msBtn;
         private System.Windows.Forms.PictureBox logoBox;
         private System.Windows.Forms.Label rightsLbl;
+        private System.Windows.Forms.Label infoLbl;
+        private FontAwesome.Sharp.IconButton serversBtn;
     }
 }
