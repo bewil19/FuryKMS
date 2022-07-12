@@ -26,10 +26,10 @@ FuryKMS no contiene ningún código malicioso que pueda comprometer la integrida
 
 ---
 
-# Servers Status
-## Down Servers:
+# 🖥 Servers Status
+## ☠ Down Servers:
 > kms7.msguides.com
-## Unstable Servers:
+## ⚠ Unstable Servers:
 > kms8.msguides.com
 
 > kms9.msguides.com
