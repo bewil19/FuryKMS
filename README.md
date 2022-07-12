@@ -1,5 +1,4 @@
 # FuryKMS
-
 <img src="https://img.shields.io/badge/-Windows-0078D6?logo=windows&logoColor=white&style=flat" /> <img src="https://img.shields.io/badge/-Office-EB3C00?logo=microsoft&logoColor=white&style=flat" />
 [![](https://img.shields.io/badge/-MS_Guides-800080?logo=microsoft&logoColor=white&style=flat)](https://msguides.com) [![](https://img.shields.io/badge/-MS_Guides_Servers_Status-FFFF00?logo=microsoft&logoColor=black&style=flat)](https://kms.msguides.com)
 [![](https://img.shields.io/badge/-Slmgr-7FBA00?logo=powershell&logoColor=white&style=flat)](https://docs.microsoft.com/en-us/windows-server/get-started/activation-slmgr-vbs-options) [![](https://img.shields.io/badge/-The_Office_Software_Protection_Platform_script-FFFFFF?logo=powershell&logoColor=black&style=flat)](https://docs.microsoft.com/en-us/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
@@ -13,6 +12,17 @@ FuryKMS doesn’t contain any malicious code that could compromise the integrity
 
 *In the rare case that your antivirus detects it as one, disable it momentarily to use it without problems.*
 
+## ✏ Summary:
+- Activate Windows 10 - 11, Office 2013 – 2021
+- Reactivation of Licenses
+- Elimination of Licenses
+- Exact information of the Licenses
+
+## 📱 Compatibility:
+- NET Framework 4.8
+- Windows 7, 8, 8.1, 10, 11
+- Office 2013 (C2R), 2016 (C2R), 2019, 2021
+
 ---
 
 # ESPAÑOL
@@ -23,6 +33,17 @@ Todo esto se valida en los servidores KMS, propiedad de MS Guides y, por lo tant
 FuryKMS no contiene ningún código malicioso que pueda comprometer la integridad de su equipo, incluso puede revisar el código fuente para comprobarlo.
 
 *En el extraño caso de que su antivirus lo detecte como uno, desactívelo de manera momentánea para usarlo sin problemas.*
+
+## ✏ Resumen:
+- Activa Windows 10 - 11, Office 2013 – 2021
+- Reactivación de Licencias
+- Eliminación de Licencias
+- Información exacta de las Licencias
+
+## 📱 Compatibilidad:
+- NET Framework 4.8
+- Windows 7, 8, 8.1, 10, 11
+- Office 2013 (C2R), 2016 (C2R), 2019, 2021
 
 ---
 
