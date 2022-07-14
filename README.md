@@ -18,7 +18,7 @@ FuryKMS doesn’t contain any malicious code that could compromise the integrity
 - Elimination of Licenses
 - Exact information of the Licenses
 
-## 📱 Compatibility:
+## 💻 Compatibility:
 - NET Framework 4.8
 - Windows 7, 8, 8.1, 10, 11
 - Office 2013 (C2R), 2016 (C2R), 2019, 2021
@@ -40,7 +40,7 @@ FuryKMS no contiene ningún código malicioso que pueda comprometer la integrida
 - Eliminación de Licencias
 - Información exacta de las Licencias
 
-## 📱 Compatibilidad:
+## 💻 Compatibilidad:
 - NET Framework 4.8
 - Windows 7, 8, 8.1, 10, 11
 - Office 2013 (C2R), 2016 (C2R), 2019, 2021
