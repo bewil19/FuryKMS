@@ -70,8 +70,8 @@ namespace FuryKMS.UserControls
         }
         public void RegistryKeys()
         {
-            string office16alt = @"C:\Program Files (x86)\Microsoft Office\Office16";
-            string office15alt = @"C:\Program Files (x86)\Microsoft Office\Office15";
+            string office16x86 = @"C:\Program Files (x86)\Microsoft Office\Office16";
+            string office15x86 = @"C:\Program Files (x86)\Microsoft Office\Office15";
             // Office C2R 2016 - 2021
             string RegistryOfficePath = @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration";
             string officeVer = Registry.GetValue(RegistryOfficePath, "versionToReport", "").ToString();
@@ -88,13 +88,13 @@ namespace FuryKMS.UserControls
                 }
                 else
                 {
-                    if (Directory.Exists(office15alt))
+                    if (Directory.Exists(office15x86))
                     {
-                        Directory.SetCurrentDirectory(office15alt);
+                        Directory.SetCurrentDirectory(office15x86);
                     }
-                    else if (Directory.Exists(office16alt))
+                    else if (Directory.Exists(office16x86))
                     {
-                        Directory.SetCurrentDirectory(office16alt);
+                        Directory.SetCurrentDirectory(office16x86);
                     }
                 }
             }
