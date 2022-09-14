@@ -22,7 +22,6 @@ namespace FuryKMS.UserControls
             LoadLanguage();
             DropDownManager();
             ComboBoxManager();
-            homeDrop.Enabled = false;
 
             string workPath = @"C:\Windows\system32";
             Directory.SetCurrentDirectory(workPath);
@@ -58,6 +57,24 @@ namespace FuryKMS.UserControls
             productLbl.Text = "Microsoft " + osName + " " + osDisplayVer + " (" + osBuild + "." + osUBR + ") " + osType;
             editionLlb.Text = "Edition ID: " + osEdition;
             ownerLbl.Text = Lang.ownerLbl + owner;
+
+            // Windows Checker
+            if (osName.Contains("Home"))
+            {
+                productsDrop.SelectedIndex = 0;
+            }
+            if (osName.Contains("Pro"))
+            {
+                productsDrop.SelectedIndex = 1;
+            }
+            if (osName.Contains("Education"))
+            {
+                productsDrop.SelectedIndex = 2;
+            }
+            if (osName.Contains("Enterprise"))
+            {
+                productsDrop.SelectedIndex = 3;
+            }
         }
         public Windows()
         {
@@ -117,7 +134,7 @@ namespace FuryKMS.UserControls
                         if (!Directory.Exists(directory))
                             Directory.CreateDirectory(directory);
 
-                        var batFileName = Path.Combine(directory, "Auto.bat");
+                        var batFileName = Path.Combine(directory, "WinAutoKMS.bat");
                         File.Delete(batFileName);
 
                         using (FileStream stream =
@@ -142,7 +159,6 @@ namespace FuryKMS.UserControls
                 case 3:
                     shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms8.msguides.com; cscript //nologo slmgr.vbs /ato");
                     break;
-
                 case 4:
                     shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms9.msguides.com; cscript //nologo slmgr.vbs /ato");
                     break;

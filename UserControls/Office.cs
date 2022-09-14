@@ -18,8 +18,8 @@ namespace FuryKMS.UserControls
     {
         private void Office_Load(object sender, EventArgs e)
         {
-            RegistryKeys();
             LoadLanguage();
+            RegistryKeys();
         }
         public Office()
         {
@@ -54,22 +54,10 @@ namespace FuryKMS.UserControls
             return builder.ToString();
         }
 
-        public void OfficePure()
+        public void RegistryKeys()
         {
             string office16 = @"C:\Program Files\Microsoft Office\Office16";
             string office15 = @"C:\Program Files\Microsoft Office\Office15";
-
-            if (Directory.Exists(office15))
-            {
-                Directory.SetCurrentDirectory(office15);
-            }
-            else if (Directory.Exists(office16))
-            {
-                Directory.SetCurrentDirectory(office16);
-            }
-        }
-        public void RegistryKeys()
-        {
             string office16x86 = @"C:\Program Files (x86)\Microsoft Office\Office16";
             string office15x86 = @"C:\Program Files (x86)\Microsoft Office\Office15";
             // Office C2R 2016 - 2021
@@ -81,36 +69,50 @@ namespace FuryKMS.UserControls
             if (officePlatform.Contains("x86"))
             {
                 productLbl.Text = "Microsoft Office " + officeId + " " + "32-bits " + "(" + officePlatform + ")";
-
-                if (Environment.Is64BitOperatingSystem == false)
-                {
-                    OfficePure();
-                }
-                else
-                {
-                    if (Directory.Exists(office15x86))
-                    {
-                        Directory.SetCurrentDirectory(office15x86);
-                    }
-                    else if (Directory.Exists(office16x86))
-                    {
-                        Directory.SetCurrentDirectory(office16x86);
-                    }
-                }
             }
             else
             {
                 productLbl.Text = "Microsoft Office " + officeId + " 64-bits " + "(" + officePlatform + ")";
-                OfficePure();
             }
-            if (officeId.Contains("2021") || officeId.Contains("2019"))
+            // Office Checker
+            if (Directory.Exists(office16))
             {
+                Directory.SetCurrentDirectory(office16);
+            }
+            else if (Directory.Exists(office16x86))
+            {
+                Directory.SetCurrentDirectory(office16x86);
+            }
+            if (Directory.Exists(office15))
+            {
+                Directory.SetCurrentDirectory(office15);
+            }
+            else if (Directory.Exists(office15x86))
+            {
+                Directory.SetCurrentDirectory(office15x86);
+            }
+
+            if (officeId.Contains("2021"))
+            {
+                productsDrop.SelectedIndex = 0;
                 officeLogo.Image = Resources.Office2019_2021;
             }
-            if (officeId.Contains("2016") || officeId.Contains("2013"))
+            if (officeId.Contains("2019"))
             {
+                productsDrop.SelectedIndex = 1;
+                officeLogo.Image = Resources.Office2019_2021;
+            }
+            if (officeId.Contains("2016"))
+            {
+                productsDrop.SelectedIndex = 2;
                 officeLogo.Image = Resources.Office2013_2016;
             }
+            if (officeId.Contains("2013"))
+            {
+                productsDrop.SelectedIndex = 3;
+                officeLogo.Image = Resources.Office2013_2016;
+            }
+
             if (officeUpdates.Contains("True"))
             {
                 updatesLbl.Text = Lang.updatesOnLblOffice;

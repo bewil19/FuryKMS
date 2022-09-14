@@ -204,6 +204,7 @@
             this.homeDrop.Size = new System.Drawing.Size(465, 29);
             this.homeDrop.TabIndex = 4;
             this.homeDrop.Text = "Select your License";
+            this.homeDrop.Visible = false;
             this.homeDrop.SelectedIndexChanged += new System.EventHandler(this.homeDrop_SelectedIndexChanged);
             // 
             // licensesLbl

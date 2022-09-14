@@ -188,7 +188,7 @@ namespace FuryKMS
         public void LoadLanguage()
         {
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(Settings.Default.Language);
-            appvLbl.Text = Lang.verLbl + "1.0.0";
+            appvLbl.Text = Lang.verLbl + "1.1.8";
             homeBtn.Text = Lang.homeBtn;
             windowsBtn.Text = Lang.windowsBtn;
             officeBtn.Text = Lang.officeBtn;
