@@ -252,6 +252,7 @@
             this.windowsLogo.Size = new System.Drawing.Size(145, 355);
             this.windowsLogo.TabIndex = 8;
             this.windowsLogo.TabStop = false;
+            this.windowsLogo.UseGdi = true;
             // 
             // productLbl
             // 
@@ -403,7 +404,6 @@
         private System.Windows.Forms.Label licensesLbl;
         private System.Windows.Forms.ComboBox proDrop;
         private System.Windows.Forms.ComboBox homeDrop;
-        private FontAwesome.Sharp.IconPictureBox windowsLogo;
         private System.Windows.Forms.Label productLbl;
         private System.Windows.Forms.Label editionLlb;
         private System.Windows.Forms.Label orgLbl;
@@ -414,5 +414,6 @@
         private System.Windows.Forms.ComboBox enterpriseDrop;
         private System.Windows.Forms.ComboBox educationDrop;
         private System.Windows.Forms.TextBox shellText;
+        public FontAwesome.Sharp.IconPictureBox windowsLogo;
     }
 }

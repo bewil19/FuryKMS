@@ -17,7 +17,7 @@ namespace FuryKMS.UserControls
 {
     public partial class Windows : UserControl
     {
-        private void Windows_Load(object sender, EventArgs e)
+        public void Windows_Load(object sender, EventArgs e)
         {
             LoadLanguage();
             DropDownManager();

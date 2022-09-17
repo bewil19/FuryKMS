@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using FuryKMS.Batchs;
 using FuryKMS.Languages;
 using FuryKMS.Properties;
 using FuryKMS.UserControls;
@@ -10,6 +11,7 @@ using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace FuryKMS
 {
@@ -25,8 +27,8 @@ namespace FuryKMS
         private void CustomFont()
         {
             PrivateFontCollection new_Font = new PrivateFontCollection();
-            int long_font = Properties.Resources.AldotheApache.Length;
-            byte[] fontdata = Properties.Resources.AldotheApache;
+            int long_font = Resources.AldotheApache.Length;
+            byte[] fontdata = Resources.AldotheApache;
             IntPtr replace = Marshal.AllocCoTaskMem(long_font);
             Marshal.Copy(fontdata, 0, replace, long_font);
             uint cFonts = 0;
@@ -43,46 +45,10 @@ namespace FuryKMS
             lblTitle2.Font = new Font(font_AldotheApache, 16, FontStyle.Regular);
             LoadLanguage();
             homeBtn.PerformClick();
-            // Windows Info
-            string RegistryWinPath = @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion";
-            string osName = Registry.GetValue(RegistryWinPath, "productName", "").ToString();
-            string osDisplayVer = Registry.GetValue(RegistryWinPath, "displayVersion", "").ToString();
-            string osBuild = Registry.GetValue(RegistryWinPath, "currentBuildNumber", "").ToString();
-            string osType = Environment.Is64BitOperatingSystem ? "64-bit" : "32-bit";
-            osLbl.Text = osName + " " + osDisplayVer + " (" + osBuild + ") " + osType;
-            // .NET Framework Info
-            const string subkey = @"SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\";
-            using (var ndpKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey(subkey))
-            {
-                if (ndpKey != null && ndpKey.GetValue("Release") != null)
-                {
-                    netLbl.Text = ($".NET Framework {CheckFor45PlusVersion((int)ndpKey.GetValue("Release"))}");
-                }
-            }
-            string CheckFor45PlusVersion(int releaseKey)
-            {
-                if (releaseKey >= 528040)
-                    return "4.8";
-                if (releaseKey >= 461808)
-                    return "4.7.2";
-                if (releaseKey >= 461308)
-                    return "4.7.1";
-                if (releaseKey >= 460798)
-                    return "4.7";
-                if (releaseKey >= 394802)
-                    return "4.6.2";
-                if (releaseKey >= 394254)
-                    return "4.6.1";
-                if (releaseKey >= 393295)
-                    return "4.6";
-                if (releaseKey >= 379893)
-                    return "4.5.2";
-                if (releaseKey >= 378675)
-                    return "4.5.1";
-                if (releaseKey >= 378389)
-                    return "4.5";
-                return "All KMS malware tools suck lol";
-            }
+            Utility.WindowsInformation();
+            osLbl.Text = Utility.MainForm_OSLabel;
+            Utility.NETFramework();
+            netLbl.Text = Utility.MainForm_NETLabel;
         }
         public MainForm()
         {
@@ -188,7 +154,7 @@ namespace FuryKMS
         public void LoadLanguage()
         {
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(Settings.Default.Language);
-            appvLbl.Text = Lang.verLbl + "1.1.8";
+            appvLbl.Text = Lang.verLbl + "1.2.10";
             homeBtn.Text = Lang.homeBtn;
             windowsBtn.Text = Lang.windowsBtn;
             officeBtn.Text = Lang.officeBtn;

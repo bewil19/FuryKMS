@@ -238,4 +238,14 @@ as the last option, since these servers are unstable; if these are
 no longer operational, I’ll remove them permanently and record
 them in this program's documentation as a history.</value>
   </data>
+  <data name="osLbl1" xml:space="preserve">
+    <value>We have detected that you are using </value>
+  </data>
+  <data name="osLbl2" xml:space="preserve">
+    <value>
+you will still be able to use FuryKMS but with limited features.</value>
+  </data>
+  <data name="warningText" xml:space="preserve">
+    <value>Warning</value>
+  </data>
 </root>

@@ -31,7 +31,6 @@ namespace FuryKMS.UserControls
             Marshal.FreeCoTaskMem(replace);
             font_AldotheApache = new_Font.Families[0];
         }
-
         private void Options_Load(object sender, EventArgs e)
         {
             CustomFont();
@@ -56,7 +55,6 @@ namespace FuryKMS.UserControls
             infoLbl.Text = Lang.infoLbl;
             Fix.LoadLanguage();
         }
-
 
         private void updatesBtn_Click(object sender, EventArgs e)
         {

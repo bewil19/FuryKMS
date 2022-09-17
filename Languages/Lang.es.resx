@@ -240,4 +240,14 @@ se encentran inestables; si estos ya no están operativos, los
 eliminaré de forma permanente y los estaré registrando en la
 documentación de este programa como un historial.</value>
   </data>
+  <data name="osLbl1" xml:space="preserve">
+    <value>Hemos detectado que estás usando </value>
+  </data>
+  <data name="osLbl2" xml:space="preserve">
+    <value>
+podrás seguir usando FuryKMS pero con funciones limitadas.</value>
+  </data>
+  <data name="warningText" xml:space="preserve">
+    <value>Advertencia</value>
+  </data>
 </root>

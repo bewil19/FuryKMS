@@ -83,6 +83,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Discarded\WarningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Discarded\WarningForm.Designer.cs">
+      <DependentUpon>WarningForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Languages\Lang.ru.Designer.cs">
       <DependentUpon>Lang.ru.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -135,6 +141,7 @@
     <Compile Include="UserControls\Windows.Designer.cs">
       <DependentUpon>Windows.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utility.cs" />
     <EmbeddedResource Include="Languages\Lang.ru.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Lang.ru.Designer.cs</LastGenOutput>
@@ -176,6 +183,9 @@
     <EmbeddedResource Include="UserControls\Windows.resx">
       <DependentUpon>Windows.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Discarded\WarningForm.resx">
+      <DependentUpon>WarningForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Batchs\2013.bat" />
     <None Include="Batchs\2016.bat" />
@@ -198,6 +208,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\7.png" />
     <Content Include="Assets\brand.png" />
     <Content Include="Assets\colorIcon.png" />
     <Content Include="Assets\icon.ico" />

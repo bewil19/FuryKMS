@@ -239,4 +239,15 @@ Windows 10 - 11 и Office 2013 - 2021</value>
 они больше не работают, я удалю их навсегда и запишу в
 документацию этой программы как историю.</value>
   </data>
+  <data name="osLbl1" xml:space="preserve">
+    <value>Мы обнаружили, что вы используете </value>
+  </data>
+  <data name="osLbl2" xml:space="preserve">
+    <value>
+вы по-прежнему сможете использовать FuryKMS, но с
+ограниченными возможностями.</value>
+  </data>
+  <data name="warningText" xml:space="preserve">
+    <value>Предостережение</value>
+  </data>
 </root>

@@ -202,6 +202,25 @@ namespace FuryKMS.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a We have detected that you are using .
+        /// </summary>
+        internal static string osLbl1 {
+            get {
+                return ResourceManager.GetString("osLbl1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a 
+        ///you will still be able to use FuryKMS but with limited features..
+        /// </summary>
+        internal static string osLbl2 {
+            get {
+                return ResourceManager.GetString("osLbl2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a User: .
         /// </summary>
         internal static string ownerLbl {
@@ -385,6 +404,15 @@ namespace FuryKMS.Languages {
         internal static string verLbl {
             get {
                 return ResourceManager.GetString("verLbl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Warning.
+        /// </summary>
+        internal static string warningText {
+            get {
+                return ResourceManager.GetString("warningText", resourceCulture);
             }
         }
         
