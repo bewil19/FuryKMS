@@ -5,7 +5,7 @@ namespace FuryKMS
 {
     public class Utility
     {
-        private static string RegistryWinPath = @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion";
+        private const string RegistryWinPath = @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion";
         // MainForm
         private static string os_mainForm;
         public static string MainForm_OSLabel
