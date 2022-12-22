@@ -56,25 +56,26 @@ namespace FuryKMS.UserControls
 
         public void RegistryKeys()
         {
-            string office16 = @"C:\Program Files\Microsoft Office\Office16";
-            string office15 = @"C:\Program Files\Microsoft Office\Office15";
-            string office16x86 = @"C:\Program Files (x86)\Microsoft Office\Office16";
-            string office15x86 = @"C:\Program Files (x86)\Microsoft Office\Office15";
+
             // Office C2R 2016 - 2021
             string RegistryOfficePath = @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration";
-            string officeVer = Registry.GetValue(RegistryOfficePath, "versionToReport", "").ToString();
+            string officeVer = Registry.GetValue(RegistryOfficePath, "versionToReport", "").ToString(); //FIX THIS
             string officePlatform = Registry.GetValue(RegistryOfficePath, "platform", "").ToString();
             string officeId = Registry.GetValue(RegistryOfficePath, "productReleaseIds", "").ToString();
             string officeUpdates = Registry.GetValue(RegistryOfficePath, "updatesEnabled", "").ToString();
             if (officePlatform.Contains("x86"))
             {
-                productLbl.Text = "Microsoft Office " + officeId + " " + "32-bits " + "(" + officePlatform + ")";
+                productLbl.Text = "Microsoft Office " + officeId + " 32-bits " + "(" + officePlatform + ")";
             }
             else
             {
                 productLbl.Text = "Microsoft Office " + officeId + " 64-bits " + "(" + officePlatform + ")";
             }
             // Office Checker
+            string office16 = @"C:\Program Files\Microsoft Office\Office16";
+            string office15 = @"C:\Program Files\Microsoft Office\Office15";
+            string office16x86 = @"C:\Program Files (x86)\Microsoft Office\Office16";
+            string office15x86 = @"C:\Program Files (x86)\Microsoft Office\Office15";
             if (Directory.Exists(office16))
             {
                 Directory.SetCurrentDirectory(office16);
@@ -91,7 +92,6 @@ namespace FuryKMS.UserControls
             {
                 Directory.SetCurrentDirectory(office15x86);
             }
-
             if (officeId.Contains("2021"))
             {
                 productsDrop.SelectedIndex = 0;
@@ -128,6 +128,8 @@ namespace FuryKMS.UserControls
 
         private void activateBtn_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
+            shellText.Text = RunCommands("cscript //nologo ospp.vbs /setprt:1688");
             switch (productsDrop.SelectedIndex)
             {
                 case 0: // 2021
@@ -214,17 +216,23 @@ namespace FuryKMS.UserControls
                     catch { }
                     break;
             }
+            Cursor.Current = Cursors.Default;
         }
         private void renewBtn_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             shellText.Text = RunCommands("cscript //nologo ospp.vbs /act");
+            Cursor.Current = Cursors.Default;
         }
         private void infoBtn_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             shellText.Text = RunCommands("cscript //nologo ospp.vbs /dstatus");
+            Cursor.Current = Cursors.Default;
         }
         private void removeBtn_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             string RegistryOfficePath = @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration";
             string officeId = Registry.GetValue(RegistryOfficePath, "productReleaseIds", "").ToString();
 
@@ -244,15 +252,18 @@ namespace FuryKMS.UserControls
             {
                 shellText.Text = RunCommands("cscript //nologo ospp.vbs /unpkey:GVGXT");
             }
+            Cursor.Current = Cursors.Default;
         }
         private void removeAllBtn_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             // Remove all Trial Licenses
             shellText.AppendText(Lang.removingTRIAL);
             shellText.Text = RunCommands("cscript //nologo ospp.vbs /unpkey:PG343; cscript //nologo ospp.vbs /unpkey:8MBCX; cscript //nologo ospp.vbs /unpkey:BTDRB; cscript //nologo ospp.vbs /unpkey:27GXM");
             // Remove all Generic Licenses
             shellText.AppendText(Lang.removingGeneric);
             shellText.Text = RunCommands("cscript //nologo ospp.vbs /unpkey:6F7TH; cscript //nologo ospp.vbs /unpkey:6MWKP; cscript //nologo ospp.vbs /unpkey:WFG99; cscript //nologo ospp.vbs /unpkey:GVGXT");
+            Cursor.Current = Cursors.Default;
         }
 
         private void productsDrop_SelectedIndexChanged(object sender, EventArgs e)

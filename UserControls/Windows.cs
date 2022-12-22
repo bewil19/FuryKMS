@@ -91,6 +91,7 @@ namespace FuryKMS.UserControls
             activateBtn.Text = Lang.activateBtn;
             infoBtn.Text = Lang.infoBtn;
             removeBtn.Text = Lang.removeBtn;
+            renewBtn.Text = Lang.renewBtn;
         }
 
         private string RunCommands(string script)
@@ -110,21 +111,28 @@ namespace FuryKMS.UserControls
 
         private void activateBtn_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             WindowsHome();
             WindowsPro();
             WindowsEducation();
             WindowsEnterprise();
+            Cursor.Current = Cursors.Default;
         }
         private void infoBtn_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             shellText.Text = RunCommands("cscript //nologo slmgr.vbs /dli; cscript //nologo slmgr.vbs /xpr");
+            Cursor.Current = Cursors.Default;
         }
         private void removeBtn_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             shellText.Text = RunCommands("cscript //nologo slmgr.vbs /upk; cscript //nologo slmgr.vbs /cpky");
+            Cursor.Current = Cursors.Default;
         }
         private void ActivationCommands()
         {
+            Cursor.Current = Cursors.WaitCursor;
             switch (serversDrop.SelectedIndex)
             {
                 case 0:
@@ -147,22 +155,56 @@ namespace FuryKMS.UserControls
                     }
                     catch { }
                     break;
-
                 case 1:
-                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms s8.uk.to; cscript //nologo slmgr.vbs /ato");
+                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms.digiboy.ir:1688; cscript //nologo slmgr.vbs /ato");
                     break;
 
                 case 2:
-                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms s9.us.to; cscript //nologo slmgr.vbs /ato");
+                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms.chinancce.com:1688; cscript //nologo slmgr.vbs /ato");
+                    break;
+
+                case 3:
+                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms.ddns.net:1688; cscript //nologo slmgr.vbs /ato");
+                    break;
+
+                case 4:
+                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms xykz.f3322.org:1688; cscript //nologo slmgr.vbs /ato");
+                    break;
+
+                case 5:
+                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms dimanyakms.sytes.net:1688; cscript //nologo slmgr.vbs /ato");
+                    break;
+
+                case 6:
+                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms.03k.org:1688; cscript //nologo slmgr.vbs /ato");
+                    break;
+
+                case 7:
+                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms ms8.us.to:1688; cscript //nologo slmgr.vbs /ato");
+                    break;
+
+                case 8:
+                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms s8.uk.to:1688; cscript //nologo slmgr.vbs /ato");
+                    break;
+
+                case 9:
+                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms s9.us.to:1688; cscript //nologo slmgr.vbs /ato");
                     break;
                 // DEPRECATED | USE ONLY IN CASE OF EMERGENCY
-                case 3:
-                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms8.msguides.com; cscript //nologo slmgr.vbs /ato");
+                case 10:
+                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms9.msguides.com:1688; cscript //nologo slmgr.vbs /ato");
                     break;
-                case 4:
-                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms9.msguides.com; cscript //nologo slmgr.vbs /ato");
+                case 11:
+                    shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms8.msguides.com:1688; cscript //nologo slmgr.vbs /ato");
                     break;
             }
+            Cursor.Current = Cursors.Default;
+        }
+        private void renewBtn_Click(object sender, EventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            shellText.Text = RunCommands("cscript //nologo slmgr.vbs /ato; cscript //nologo slmgr.vbs /rilc; cscript //nologo slmgr.vbs /rearm");
+            Cursor.Current = Cursors.Default;
         }
 
         private void DropDownManager()

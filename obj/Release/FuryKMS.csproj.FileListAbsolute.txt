@@ -10,6 +10,24 @@ C:\Users\kevin\OneDrive\Escritorio\x86\FuryKMS.pdb
 C:\Users\kevin\OneDrive\Escritorio\x86\ru\FuryKMS.resources.dll
 C:\Users\kevin\OneDrive\Escritorio\x86\en\FuryKMS.resources.dll
 C:\Users\kevin\OneDrive\Escritorio\x86\es\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\FuryKMS.exe.config
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\FuryKMS.exe
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\FuryKMS.pdb
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\ru\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\en\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\es\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\FuryKMS.exe.config
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\FuryKMS.exe
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\FuryKMS.pdb
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\ru\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\en\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\es\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x64\FuryKMS.exe.config
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x64\FuryKMS.exe
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x64\FuryKMS.pdb
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x64\ru\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x64\en\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x64\es\FuryKMS.resources.dll
 C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.csproj.AssemblyReference.cache
 C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.csproj.SuggestedBindingRedirects.cache
 C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.Languages.Lang.resources
@@ -30,15 +48,9 @@ C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\es\FuryKMS.resources.
 C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.csproj.CopyComplete
 C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.exe
 C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.pdb
-C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\FuryKMS.exe.config
-C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\FuryKMS.exe
-C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\FuryKMS.pdb
-C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\ru\FuryKMS.resources.dll
-C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\en\FuryKMS.resources.dll
-C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\es\FuryKMS.resources.dll
-C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\FuryKMS.exe.config
-C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\FuryKMS.exe
-C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\FuryKMS.pdb
-C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\ru\FuryKMS.resources.dll
-C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\en\FuryKMS.resources.dll
-C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\es\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x86\FuryKMS.exe.config
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x86\FuryKMS.exe
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x86\FuryKMS.pdb
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x86\ru\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x86\en\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x86\es\FuryKMS.resources.dll

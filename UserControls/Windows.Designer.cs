@@ -34,6 +34,7 @@
             this.activateBtn = new System.Windows.Forms.Button();
             this.infoBtn = new System.Windows.Forms.Button();
             this.bottomPnl = new System.Windows.Forms.Panel();
+            this.renewBtn = new System.Windows.Forms.Button();
             this.topPnl = new System.Windows.Forms.Panel();
             this.kmsLbl = new System.Windows.Forms.Label();
             this.serversDrop = new System.Windows.Forms.ComboBox();
@@ -78,7 +79,7 @@
             this.productsDrop.Location = new System.Drawing.Point(175, 27);
             this.productsDrop.Name = "productsDrop";
             this.productsDrop.Size = new System.Drawing.Size(465, 29);
-            this.productsDrop.TabIndex = 1;
+            this.productsDrop.TabIndex = 4;
             this.productsDrop.Text = "Select your Windows Edition";
             this.productsDrop.SelectedIndexChanged += new System.EventHandler(this.productsDrop_SelectedIndexChanged);
             // 
@@ -93,7 +94,7 @@
             this.removeBtn.Location = new System.Drawing.Point(630, 15);
             this.removeBtn.Name = "removeBtn";
             this.removeBtn.Size = new System.Drawing.Size(155, 40);
-            this.removeBtn.TabIndex = 2;
+            this.removeBtn.TabIndex = 10;
             this.removeBtn.Text = "Remove Key";
             this.removeBtn.UseVisualStyleBackColor = false;
             this.removeBtn.Click += new System.EventHandler(this.removeBtn_Click);
@@ -110,7 +111,7 @@
             this.activateBtn.Location = new System.Drawing.Point(15, 15);
             this.activateBtn.Name = "activateBtn";
             this.activateBtn.Size = new System.Drawing.Size(125, 40);
-            this.activateBtn.TabIndex = 3;
+            this.activateBtn.TabIndex = 7;
             this.activateBtn.Text = "Activate!";
             this.activateBtn.UseVisualStyleBackColor = false;
             this.activateBtn.Click += new System.EventHandler(this.activateBtn_Click);
@@ -126,7 +127,7 @@
             this.infoBtn.Location = new System.Drawing.Point(337, 15);
             this.infoBtn.Name = "infoBtn";
             this.infoBtn.Size = new System.Drawing.Size(125, 40);
-            this.infoBtn.TabIndex = 4;
+            this.infoBtn.TabIndex = 9;
             this.infoBtn.Text = "Information";
             this.infoBtn.UseVisualStyleBackColor = false;
             this.infoBtn.Click += new System.EventHandler(this.infoBtn_Click);
@@ -134,6 +135,7 @@
             // bottomPnl
             // 
             this.bottomPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.bottomPnl.Controls.Add(this.renewBtn);
             this.bottomPnl.Controls.Add(this.activateBtn);
             this.bottomPnl.Controls.Add(this.removeBtn);
             this.bottomPnl.Controls.Add(this.infoBtn);
@@ -141,7 +143,23 @@
             this.bottomPnl.Location = new System.Drawing.Point(0, 520);
             this.bottomPnl.Name = "bottomPnl";
             this.bottomPnl.Size = new System.Drawing.Size(800, 70);
-            this.bottomPnl.TabIndex = 5;
+            this.bottomPnl.TabIndex = 0;
+            // 
+            // renewBtn
+            // 
+            this.renewBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
+            this.renewBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.renewBtn.FlatAppearance.BorderSize = 0;
+            this.renewBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.renewBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.renewBtn.ForeColor = System.Drawing.Color.White;
+            this.renewBtn.Location = new System.Drawing.Point(146, 15);
+            this.renewBtn.Name = "renewBtn";
+            this.renewBtn.Size = new System.Drawing.Size(125, 40);
+            this.renewBtn.TabIndex = 8;
+            this.renewBtn.Text = "Renew";
+            this.renewBtn.UseVisualStyleBackColor = false;
+            this.renewBtn.Click += new System.EventHandler(this.renewBtn_Click);
             // 
             // topPnl
             // 
@@ -156,7 +174,7 @@
             this.topPnl.Location = new System.Drawing.Point(0, 0);
             this.topPnl.Name = "topPnl";
             this.topPnl.Size = new System.Drawing.Size(800, 165);
-            this.topPnl.TabIndex = 7;
+            this.topPnl.TabIndex = 0;
             // 
             // kmsLbl
             // 
@@ -166,7 +184,7 @@
             this.kmsLbl.Location = new System.Drawing.Point(15, 110);
             this.kmsLbl.Name = "kmsLbl";
             this.kmsLbl.Size = new System.Drawing.Size(103, 21);
-            this.kmsLbl.TabIndex = 8;
+            this.kmsLbl.TabIndex = 0;
             this.kmsLbl.Text = "KMS Servers";
             // 
             // serversDrop
@@ -176,10 +194,17 @@
             this.serversDrop.FormattingEnabled = true;
             this.serversDrop.Items.AddRange(new object[] {
             "Auto (Recomended)",
+            "kms.digiboy.ir",
+            "kms.chinancce.com",
+            "kms.ddns.net",
+            "xykz.f3322.org",
+            "dimanyakms.sytes.net",
+            "kms.03k.org",
+            "ms8.us.to",
             "s8.uk.to",
             "s9.us.to",
-            "kms8.msguides.com (UNSTABLE)",
-            "kms9.msguides.com (UNSTABLE)"});
+            "kms9.msguides.com (UNSTABLE)",
+            "kms8.msguides.com (UNSTABLE)"});
             this.serversDrop.Location = new System.Drawing.Point(175, 107);
             this.serversDrop.Name = "serversDrop";
             this.serversDrop.Size = new System.Drawing.Size(465, 29);
@@ -215,7 +240,7 @@
             this.licensesLbl.Location = new System.Drawing.Point(15, 70);
             this.licensesLbl.Name = "licensesLbl";
             this.licensesLbl.Size = new System.Drawing.Size(71, 21);
-            this.licensesLbl.TabIndex = 2;
+            this.licensesLbl.TabIndex = 0;
             this.licensesLbl.Text = "Licenses";
             // 
             // proDrop
@@ -262,7 +287,7 @@
             this.productLbl.Location = new System.Drawing.Point(10, 20);
             this.productLbl.Name = "productLbl";
             this.productLbl.Size = new System.Drawing.Size(82, 21);
-            this.productLbl.TabIndex = 9;
+            this.productLbl.TabIndex = 0;
             this.productLbl.Text = "Microsoft";
             // 
             // editionLlb
@@ -273,7 +298,7 @@
             this.editionLlb.Location = new System.Drawing.Point(10, 41);
             this.editionLlb.Name = "editionLlb";
             this.editionLlb.Size = new System.Drawing.Size(124, 21);
-            this.editionLlb.TabIndex = 10;
+            this.editionLlb.TabIndex = 0;
             this.editionLlb.Text = "Edition ID: Core";
             // 
             // orgLbl
@@ -284,7 +309,7 @@
             this.orgLbl.Location = new System.Drawing.Point(10, 62);
             this.orgLbl.Name = "orgLbl";
             this.orgLbl.Size = new System.Drawing.Size(107, 21);
-            this.orgLbl.TabIndex = 12;
+            this.orgLbl.TabIndex = 0;
             this.orgLbl.Text = "Organization:";
             // 
             // ownerLbl
@@ -295,7 +320,7 @@
             this.ownerLbl.Location = new System.Drawing.Point(10, 83);
             this.ownerLbl.Name = "ownerLbl";
             this.ownerLbl.Size = new System.Drawing.Size(63, 21);
-            this.ownerLbl.TabIndex = 13;
+            this.ownerLbl.TabIndex = 0;
             this.ownerLbl.Text = "Owner:";
             // 
             // panel1
@@ -308,7 +333,7 @@
             this.panel1.Location = new System.Drawing.Point(145, 165);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(655, 110);
-            this.panel1.TabIndex = 14;
+            this.panel1.TabIndex = 0;
             // 
             // enterpriseDrop
             // 
@@ -348,7 +373,7 @@
             this.educationDrop.Location = new System.Drawing.Point(175, 67);
             this.educationDrop.Name = "educationDrop";
             this.educationDrop.Size = new System.Drawing.Size(465, 29);
-            this.educationDrop.TabIndex = 16;
+            this.educationDrop.TabIndex = 5;
             this.educationDrop.Text = "Select your License";
             this.educationDrop.Visible = false;
             this.educationDrop.SelectedIndexChanged += new System.EventHandler(this.educationDrop_SelectedIndexChanged);
@@ -363,8 +388,9 @@
             this.shellText.Multiline = true;
             this.shellText.Name = "shellText";
             this.shellText.ReadOnly = true;
+            this.shellText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.shellText.Size = new System.Drawing.Size(645, 245);
-            this.shellText.TabIndex = 17;
+            this.shellText.TabIndex = 11;
             // 
             // Windows
             // 
@@ -410,10 +436,11 @@
         private System.Windows.Forms.Label ownerLbl;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label kmsLbl;
-        private System.Windows.Forms.ComboBox serversDrop;
         private System.Windows.Forms.ComboBox enterpriseDrop;
         private System.Windows.Forms.ComboBox educationDrop;
         private System.Windows.Forms.TextBox shellText;
         public FontAwesome.Sharp.IconPictureBox windowsLogo;
+        private System.Windows.Forms.Button renewBtn;
+        private System.Windows.Forms.ComboBox serversDrop;
     }
 }

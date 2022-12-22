@@ -141,7 +141,7 @@
             this.removeBtn.Name = "removeBtn";
             this.removeBtn.Size = new System.Drawing.Size(155, 40);
             this.removeBtn.TabIndex = 5;
-            this.removeBtn.Text = "Remover Licencia";
+            this.removeBtn.Text = "Remove Key";
             this.removeBtn.UseVisualStyleBackColor = false;
             this.removeBtn.Click += new System.EventHandler(this.removeBtn_Click);
             // 

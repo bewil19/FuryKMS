@@ -74,7 +74,7 @@ namespace FuryKMS
             this.appvLbl.Location = new System.Drawing.Point(121, 32);
             this.appvLbl.Name = "appvLbl";
             this.appvLbl.Size = new System.Drawing.Size(81, 17);
-            this.appvLbl.TabIndex = 5;
+            this.appvLbl.TabIndex = 0;
             this.appvLbl.Text = "Version 1.0.0";
             // 
             // netLbl
@@ -85,7 +85,7 @@ namespace FuryKMS
             this.netLbl.Location = new System.Drawing.Point(251, 32);
             this.netLbl.Name = "netLbl";
             this.netLbl.Size = new System.Drawing.Size(140, 17);
-            this.netLbl.TabIndex = 4;
+            this.netLbl.TabIndex = 0;
             this.netLbl.Text = ".NET Framework 4.X.X";
             this.netLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -97,7 +97,7 @@ namespace FuryKMS
             this.osLbl.Location = new System.Drawing.Point(251, 15);
             this.osLbl.Name = "osLbl";
             this.osLbl.Size = new System.Drawing.Size(128, 17);
-            this.osLbl.TabIndex = 3;
+            this.osLbl.TabIndex = 0;
             this.osLbl.Text = "Windows 10 Version";
             this.osLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -110,7 +110,7 @@ namespace FuryKMS
             this.lblTitle2.Location = new System.Drawing.Point(165, 9);
             this.lblTitle2.Name = "lblTitle2";
             this.lblTitle2.Size = new System.Drawing.Size(46, 27);
-            this.lblTitle2.TabIndex = 2;
+            this.lblTitle2.TabIndex = 0;
             this.lblTitle2.Text = "KMS";
             // 
             // lblTitle1
@@ -121,7 +121,7 @@ namespace FuryKMS
             this.lblTitle1.Location = new System.Drawing.Point(121, 9);
             this.lblTitle1.Name = "lblTitle1";
             this.lblTitle1.Size = new System.Drawing.Size(51, 27);
-            this.lblTitle1.TabIndex = 1;
+            this.lblTitle1.TabIndex = 0;
             this.lblTitle1.Text = "Fury";
             // 
             // pictureBox1
@@ -160,7 +160,7 @@ namespace FuryKMS
             this.officeBtn.Location = new System.Drawing.Point(0, 150);
             this.officeBtn.Name = "officeBtn";
             this.officeBtn.Size = new System.Drawing.Size(115, 75);
-            this.officeBtn.TabIndex = 0;
+            this.officeBtn.TabIndex = 2;
             this.officeBtn.Text = "Office";
             this.officeBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.officeBtn.UseVisualStyleBackColor = true;
@@ -181,7 +181,7 @@ namespace FuryKMS
             this.windowsBtn.Location = new System.Drawing.Point(0, 75);
             this.windowsBtn.Name = "windowsBtn";
             this.windowsBtn.Size = new System.Drawing.Size(115, 75);
-            this.windowsBtn.TabIndex = 3;
+            this.windowsBtn.TabIndex = 1;
             this.windowsBtn.Text = "Windows";
             this.windowsBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.windowsBtn.UseVisualStyleBackColor = true;
@@ -202,7 +202,7 @@ namespace FuryKMS
             this.optionsBtn.Location = new System.Drawing.Point(0, 515);
             this.optionsBtn.Name = "optionsBtn";
             this.optionsBtn.Size = new System.Drawing.Size(115, 75);
-            this.optionsBtn.TabIndex = 2;
+            this.optionsBtn.TabIndex = 3;
             this.optionsBtn.Text = "Settings";
             this.optionsBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.optionsBtn.UseVisualStyleBackColor = true;
@@ -251,7 +251,7 @@ namespace FuryKMS
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FuryKMS v1.0.0";
+            this.Text = "FuryKMS";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.titlePnl.ResumeLayout(false);
