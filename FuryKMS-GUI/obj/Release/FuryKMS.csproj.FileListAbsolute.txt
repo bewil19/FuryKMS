@@ -1,0 +1,94 @@
+C:\Users\kevin\OneDrive\Escritorio\x64\FuryKMS.exe.config
+C:\Users\kevin\OneDrive\Escritorio\x64\FuryKMS.exe
+C:\Users\kevin\OneDrive\Escritorio\x64\FuryKMS.pdb
+C:\Users\kevin\OneDrive\Escritorio\x64\ru\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\x64\en\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\x64\es\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\x86\FuryKMS.exe.config
+C:\Users\kevin\OneDrive\Escritorio\x86\FuryKMS.exe
+C:\Users\kevin\OneDrive\Escritorio\x86\FuryKMS.pdb
+C:\Users\kevin\OneDrive\Escritorio\x86\ru\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\x86\en\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\x86\es\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\FuryKMS.exe.config
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\FuryKMS.exe
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\FuryKMS.pdb
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\ru\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\en\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x64\es\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\FuryKMS.exe.config
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\FuryKMS.exe
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\FuryKMS.pdb
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\ru\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\en\FuryKMS.resources.dll
+C:\Users\kevin\OneDrive\Escritorio\FuryKMS v1.0.0 x86\es\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x64\FuryKMS.exe.config
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x64\FuryKMS.exe
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x64\FuryKMS.pdb
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x64\ru\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x64\en\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x64\es\FuryKMS.resources.dll
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.csproj.AssemblyReference.cache
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.csproj.SuggestedBindingRedirects.cache
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.Languages.Lang.resources
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.UserControls.Home.resources
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.UserControls.Office.resources
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.UserControls.Options.resources
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.MainForm.resources
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.Properties.Resources.resources
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.UserControls.Windows.resources
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.Languages.Lang.ru.resources
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.Languages.Lang.en.resources
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.Languages.Lang.es.resources
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.csproj.GenerateResource.cache
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.csproj.CoreCompileInputs.cache
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\ru\FuryKMS.resources.dll
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\en\FuryKMS.resources.dll
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\es\FuryKMS.resources.dll
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.csproj.CopyComplete
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.exe
+C:\Global Repository\GitHub Repository\FuryKMS\obj\Release\FuryKMS.pdb
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x86\FuryKMS.exe.config
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x86\FuryKMS.exe
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x86\FuryKMS.pdb
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x86\ru\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x86\en\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMS v1.2.0 x86\es\FuryKMS.resources.dll
+C:\Global Repository\Users\kevin\Desktop\FuryKMSv1.2.0-x64\FuryKMS.exe.config
+C:\Global Repository\Users\kevin\Desktop\FuryKMSv1.2.0-x64\FuryKMS.exe
+C:\Global Repository\Users\kevin\Desktop\FuryKMSv1.2.0-x64\FuryKMS.pdb
+C:\Global Repository\Users\kevin\Desktop\FuryKMSv1.2.0-x64\ru\FuryKMS.resources.dll
+C:\Global Repository\Users\kevin\Desktop\FuryKMSv1.2.0-x64\en\FuryKMS.resources.dll
+C:\Global Repository\Users\kevin\Desktop\FuryKMSv1.2.0-x64\es\FuryKMS.resources.dll
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.csproj.AssemblyReference.cache
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.csproj.SuggestedBindingRedirects.cache
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.Languages.Lang.resources
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.UserControls.Home.resources
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.UserControls.Office.resources
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.UserControls.Options.resources
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.MainForm.resources
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.Properties.Resources.resources
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.UserControls.Windows.resources
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.Languages.Lang.ru.resources
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.Languages.Lang.en.resources
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.Languages.Lang.es.resources
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.csproj.GenerateResource.cache
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.csproj.CoreCompileInputs.cache
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\ru\FuryKMS.resources.dll
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\en\FuryKMS.resources.dll
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\es\FuryKMS.resources.dll
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.csproj.CopyComplete
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.exe
+C:\Global Repository\GitHub Repository\FuryKMS\FuryKMS-GUI\obj\Release\FuryKMS.pdb
+C:\Users\kevin\Desktop\FuryKMSv1.2.1-x64\FuryKMS.exe.config
+C:\Users\kevin\Desktop\FuryKMSv1.2.1-x64\FuryKMS.exe
+C:\Users\kevin\Desktop\FuryKMSv1.2.1-x64\FuryKMS.pdb
+C:\Users\kevin\Desktop\FuryKMSv1.2.1-x64\ru\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMSv1.2.1-x64\en\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMSv1.2.1-x64\es\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMSv1.2.1-x86\FuryKMS.exe.config
+C:\Users\kevin\Desktop\FuryKMSv1.2.1-x86\FuryKMS.exe
+C:\Users\kevin\Desktop\FuryKMSv1.2.1-x86\FuryKMS.pdb
+C:\Users\kevin\Desktop\FuryKMSv1.2.1-x86\ru\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMSv1.2.1-x86\en\FuryKMS.resources.dll
+C:\Users\kevin\Desktop\FuryKMSv1.2.1-x86\es\FuryKMS.resources.dll
