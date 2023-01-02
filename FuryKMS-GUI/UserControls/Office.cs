@@ -19,6 +19,8 @@ namespace FuryKMS.UserControls
         private void Office_Load(object sender, EventArgs e)
         {
             LoadLanguage();
+            activateBtn.Enabled = false;
+            serversDrop.Text = Lang.serversDrop;
             RegistryKeys();
         }
         public Office()
@@ -31,12 +33,13 @@ namespace FuryKMS.UserControls
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(Settings.Default.Language);
             productsLbl.Text = Lang.productsLbl;
             productsDrop.Text = Lang.officeDrop;
-            noteLbl.Text = Lang.noteLbl;
             activateBtn.Text = Lang.activateBtn;
             renewBtn.Text = Lang.renewBtn;
             infoBtn.Text = Lang.infoBtn;
             removeBtn.Text = Lang.removeBtn;
             removeAllBtn.Text = Lang.removeAllBtn;
+            serversDrop.Text = Lang.serversDrop;
+            kmsLbl.Text = Lang.kmsLbl;
         }
 
         private string RunCommands(string script)
@@ -56,7 +59,6 @@ namespace FuryKMS.UserControls
 
         public void RegistryKeys()
         {
-
             // Office C2R 2016 - 2021
             string RegistryOfficePath = @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration";
             string officeVer = Registry.GetValue(RegistryOfficePath, "versionToReport", "").ToString(); //FIX THIS
@@ -126,6 +128,75 @@ namespace FuryKMS.UserControls
             // Office MSI Here
         }
 
+        private void FinalStep()
+        {
+            switch (serversDrop.SelectedIndex)
+            {
+                case 0:
+                    try
+                    {
+                        string directory = Directory.GetCurrentDirectory() + @"Batchs";
+                        if (!Directory.Exists(directory))
+                            Directory.CreateDirectory(directory);
+
+                        var batFileName = Path.Combine(directory, "OfficeAutoKMS.bat");
+                        File.Delete(batFileName);
+
+                        using (FileStream stream =
+                            new FileStream(batFileName, FileMode.CreateNew, FileAccess.Write))
+                        {
+                            var bytes = Resources.OfficeAutoKMS;
+                            stream.Write(bytes, 0, bytes.Length);
+                        }
+                        Process.Start(batFileName);
+                    }
+                    catch { }
+                    break;
+                case 1:
+                    shellText.Text = RunCommands("cscript //nologo ospp.vbs /sethst:kms.digiboy.ir; cscript //nologo ospp.vbs /act");
+                    break;
+
+                case 2:
+                    shellText.Text = RunCommands("cscript //nologo ospp.vbs /sethst:kms.chinancce.com; cscript //nologo ospp.vbs /act");
+                    break;
+
+                case 3:
+                    shellText.Text = RunCommands("cscript //nologo ospp.vbs /sethst:kms.ddns.net; cscript //nologo ospp.vbs /act");
+                    break;
+
+                case 4:
+                    shellText.Text = RunCommands("cscript //nologo ospp.vbs /sethst:xykz.f3322.org; cscript //nologo ospp.vbs /act");
+                    break;
+
+                case 5:
+                    shellText.Text = RunCommands("cscript //nologo ospp.vbs /sethst:dimanyakms.sytes.net; cscript //nologo ospp.vbs /act");
+                    break;
+
+                case 6:
+                    shellText.Text = RunCommands("cscript //nologo ospp.vbs /sethst:kms.03k.org; cscript //nologo ospp.vbs /act");
+                    break;
+
+                case 7:
+                    shellText.Text = RunCommands("cscript //nologo ospp.vbs /sethst:ms8.us.to; cscript //nologo ospp.vbs /act");
+                    break;
+
+                case 8:
+                    shellText.Text = RunCommands("cscript //nologo ospp.vbs /sethst:s8.uk.to; cscript //nologo ospp.vbs /act");
+                    break;
+
+                case 9:
+                    shellText.Text = RunCommands("cscript //nologo ospp.vbs /sethst:s9.us.to; cscript //nologo ospp.vbs /act");
+                    break;
+                // DEPRECATED | USE ONLY IN CASE OF EMERGENCY
+                case 10:
+                    shellText.Text = RunCommands("cscript //nologo ospp.vbs /sethst:kms9.msguides.com; cscript //nologo ospp.vbs /act");
+                    break;
+                case 11:
+                    shellText.Text = RunCommands("cscript //nologo ospp.vbs /sethst:kms8.msguides.com; cscript //nologo ospp.vbs /act");
+                    break;
+            }
+        }
+
         private void activateBtn_Click(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
@@ -133,87 +204,23 @@ namespace FuryKMS.UserControls
             switch (productsDrop.SelectedIndex)
             {
                 case 0: // 2021
-                    try
-                    {
-                        string directory = Directory.GetCurrentDirectory() + @"Batchs";
-                        if (!Directory.Exists(directory))
-                            Directory.CreateDirectory(directory);
-
-                        var batFileName = Path.Combine(directory, "2021.bat");
-                        File.Delete(batFileName);
-
-                        using (FileStream stream =
-                            new FileStream(batFileName, FileMode.CreateNew, FileAccess.Write))
-                        {
-                            var bytes = Resources._2021;
-                            stream.Write(bytes, 0, bytes.Length);
-                        }
-                        Process.Start(batFileName);
-                    }
-                    catch { }
+                    shellText.Text = RunCommands("cmd /c \"for /f %x in ('dir /b ..\\root\\Licenses16\\ProPlus2021VL_KMS*.xrm-ms') do cscript ospp.vbs /inslic:..\\root\\Licenses16\\%x\"; cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH");
+                    FinalStep();
                     break;
 
                 case 1: // 2019
-                    try
-                    {
-                        string directory = Directory.GetCurrentDirectory() + @"Batchs";
-                        if (!Directory.Exists(directory))
-                            Directory.CreateDirectory(directory);
-
-                        var batFileName = Path.Combine(directory, "2019.bat");
-                        File.Delete(batFileName);
-
-                        using (FileStream stream =
-                            new FileStream(batFileName, FileMode.CreateNew, FileAccess.Write))
-                        {
-                            var bytes = Resources._2019;
-                            stream.Write(bytes, 0, bytes.Length);
-                        }
-                        Process.Start(batFileName);
-                    }
-                    catch { }
+                    shellText.Text = RunCommands("cmd /c \"for /f %x in ('dir /b ..\\root\\Licenses16\\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:..\\root\\Licenses16\\%x\"; cscript ospp.vbs /inpkey:NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP");
+                    FinalStep();
                     break;
 
                 case 2: // 2016
-                    try
-                    {
-                        string directory = Directory.GetCurrentDirectory() + @"Batchs";
-                        if (!Directory.Exists(directory))
-                            Directory.CreateDirectory(directory);
-
-                        var batFileName = Path.Combine(directory, "2016.bat");
-                        File.Delete(batFileName);
-
-                        using (FileStream stream =
-                            new FileStream(batFileName, FileMode.CreateNew, FileAccess.Write))
-                        {
-                            var bytes = Resources._2016;
-                            stream.Write(bytes, 0, bytes.Length);
-                        }
-                        Process.Start(batFileName);
-                    }
-                    catch { }
+                    shellText.Text = RunCommands("cmd /c \"for /f %x in ('dir /b ..\\root\\Licenses16\\proplusvl_kms*.xrm-ms') do cscript ospp.vbs /inslic:..\\root\\Licenses16\\%x\"; cscript ospp.vbs /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99");
+                    FinalStep();
                     break;
 
                 case 3: // 2013
-                    try
-                    {
-                        string directory = Directory.GetCurrentDirectory() + @"Batchs";
-                        if (!Directory.Exists(directory))
-                            Directory.CreateDirectory(directory);
-
-                        var batFileName = Path.Combine(directory, "2013.bat");
-                        File.Delete(batFileName);
-
-                        using (FileStream stream =
-                            new FileStream(batFileName, FileMode.CreateNew, FileAccess.Write))
-                        {
-                            var bytes = Resources._2013;
-                            stream.Write(bytes, 0, bytes.Length);
-                        }
-                        Process.Start(batFileName);
-                    }
-                    catch { }
+                    shellText.Text = RunCommands("cscript ospp.vbs /inpkey:YC7DK-G2NP3-2QQC3-J6H88-GVGXT");
+                    FinalStep();
                     break;
             }
             Cursor.Current = Cursors.Default;
@@ -271,18 +278,43 @@ namespace FuryKMS.UserControls
             switch (productsDrop.SelectedIndex)
             {
                 case 0: // 2021
-                    activateBtn.Enabled = true;
+                    serversDrop.Enabled = true;
                     break;
 
                 case 1: // 2019
-                    activateBtn.Enabled = true;
+                    serversDrop.Enabled = true;
                     break;
 
                 case 2: // 2016
-                    activateBtn.Enabled = true;
+                    serversDrop.Enabled = true;
                     break;
 
                 case 3: // 2013
+                    serversDrop.Enabled = true;
+                    break;
+            }
+        }
+        private void serversDrop_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (serversDrop.SelectedIndex)
+            {
+                case 0:
+                    activateBtn.Enabled = true;
+                    break;
+
+                case 1:
+                    activateBtn.Enabled = true;
+                    break;
+
+                case 2:
+                    activateBtn.Enabled = true;
+                    break;
+
+                case 3:
+                    activateBtn.Enabled = true;
+                    break;
+
+                case 4:
                     activateBtn.Enabled = true;
                     break;
             }

@@ -36,6 +36,7 @@
             this.titleLbl3 = new System.Windows.Forms.Label();
             this.textLbl3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.noteLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,18 +110,31 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FuryKMS.Properties.Resources.brand;
-            this.pictureBox1.Location = new System.Drawing.Point(270, 410);
+            this.pictureBox1.Location = new System.Drawing.Point(283, 438);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(530, 180);
+            this.pictureBox1.Size = new System.Drawing.Size(510, 152);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // noteLbl
+            // 
+            this.noteLbl.AutoSize = true;
+            this.noteLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noteLbl.ForeColor = System.Drawing.Color.White;
+            this.noteLbl.Location = new System.Drawing.Point(11, 384);
+            this.noteLbl.Name = "noteLbl";
+            this.noteLbl.Size = new System.Drawing.Size(730, 42);
+            this.noteLbl.TabIndex = 9;
+            this.noteLbl.Text = "*Note: The license expires in 180 days and is automatically renewed 7 days later," +
+    " in the rare case If it\r\ndoesn\'t, press the RENEW button.";
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Controls.Add(this.noteLbl);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textLbl3);
             this.Controls.Add(this.titleLbl3);
@@ -146,5 +160,6 @@
         private System.Windows.Forms.Label titleLbl3;
         private System.Windows.Forms.Label textLbl3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label noteLbl;
     }
 }

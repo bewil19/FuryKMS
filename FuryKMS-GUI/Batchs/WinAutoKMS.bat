@@ -3,7 +3,6 @@
 @echo off
 mode con: cols=87 lines=20
 title Activate Microsoft Windows 10 - 11 v1.2.1(All Versions)&cls&echo =====================================================================================&echo #Project: Activating Microsoft software products for FREE&echo =====================================================================================&echo.&echo #Supported products:&echo - Windows 10 - 11 Home&echo - Windows 10 - 11 Professional&echo - Windows 10 - 11 Education&echo - Windows 10 - 11 Enterprise&echo.&echo.&echo =====================================================================================&echo Activating your Windows...
-:skms
 if %i% GTR 10 goto busy
 if %i% EQU 1 set KMS=kms.digiboy.ir
 if %i% EQU 2 set KMS=kms.chinancce.com

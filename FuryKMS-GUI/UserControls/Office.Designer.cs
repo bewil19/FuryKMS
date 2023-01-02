@@ -35,7 +35,8 @@
             this.infoBtn = new System.Windows.Forms.Button();
             this.removeBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.noteLbl = new System.Windows.Forms.Label();
+            this.kmsLbl = new System.Windows.Forms.Label();
+            this.serversDrop = new System.Windows.Forms.ComboBox();
             this.productsLbl = new System.Windows.Forms.Label();
             this.productsDrop = new System.Windows.Forms.ComboBox();
             this.shellText = new System.Windows.Forms.TextBox();
@@ -147,7 +148,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.noteLbl);
+            this.panel2.Controls.Add(this.kmsLbl);
+            this.panel2.Controls.Add(this.serversDrop);
             this.panel2.Controls.Add(this.productsLbl);
             this.panel2.Controls.Add(this.productsDrop);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -156,17 +158,41 @@
             this.panel2.Size = new System.Drawing.Size(800, 130);
             this.panel2.TabIndex = 1;
             // 
-            // noteLbl
+            // kmsLbl
             // 
-            this.noteLbl.AutoSize = true;
-            this.noteLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noteLbl.ForeColor = System.Drawing.Color.White;
-            this.noteLbl.Location = new System.Drawing.Point(15, 70);
-            this.noteLbl.Name = "noteLbl";
-            this.noteLbl.Size = new System.Drawing.Size(720, 42);
-            this.noteLbl.TabIndex = 8;
-            this.noteLbl.Text = "*Note: The license expires in 180 days and is automatically renewed 7 days later," +
-    " in the rare case If \r\nit doesn\'t, press the RENEW button.";
+            this.kmsLbl.AutoSize = true;
+            this.kmsLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kmsLbl.ForeColor = System.Drawing.Color.White;
+            this.kmsLbl.Location = new System.Drawing.Point(15, 70);
+            this.kmsLbl.Name = "kmsLbl";
+            this.kmsLbl.Size = new System.Drawing.Size(103, 21);
+            this.kmsLbl.TabIndex = 8;
+            this.kmsLbl.Text = "KMS Servers";
+            // 
+            // serversDrop
+            // 
+            this.serversDrop.Enabled = false;
+            this.serversDrop.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.serversDrop.FormattingEnabled = true;
+            this.serversDrop.Items.AddRange(new object[] {
+            "Auto (Recomended)",
+            "kms.digiboy.ir",
+            "kms.chinancce.com",
+            "kms.ddns.net",
+            "xykz.f3322.org",
+            "dimanyakms.sytes.net",
+            "kms.03k.org",
+            "ms8.us.to",
+            "s8.uk.to",
+            "s9.us.to",
+            "kms9.msguides.com (UNSTABLE)",
+            "kms8.msguides.com (UNSTABLE)"});
+            this.serversDrop.Location = new System.Drawing.Point(175, 67);
+            this.serversDrop.Name = "serversDrop";
+            this.serversDrop.Size = new System.Drawing.Size(465, 29);
+            this.serversDrop.TabIndex = 9;
+            this.serversDrop.Text = "Select your KMS Server";
+            this.serversDrop.SelectedIndexChanged += new System.EventHandler(this.serversDrop_SelectedIndexChanged);
             // 
             // productsLbl
             // 
@@ -305,7 +331,8 @@
         private System.Windows.Forms.Label verLbl;
         private System.Windows.Forms.Label productLbl;
         private System.Windows.Forms.Button renewBtn;
-        private System.Windows.Forms.Label noteLbl;
         private System.Windows.Forms.Button removeAllBtn;
+        private System.Windows.Forms.Label kmsLbl;
+        private System.Windows.Forms.ComboBox serversDrop;
     }
 }

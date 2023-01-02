@@ -26,6 +26,7 @@ namespace FuryKMS.UserControls
             textLbl1.Text = Lang.textLbl1;
             textLbl2.Text = Lang.textLbl2;
             textLbl3.Text = Lang.textLbl3;
+            noteLbl.Text = Lang.noteLbl;
         }
     }
 }

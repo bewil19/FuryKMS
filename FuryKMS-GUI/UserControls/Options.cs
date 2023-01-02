@@ -64,10 +64,6 @@ namespace FuryKMS.UserControls
         {
             Process.Start("https://github.com/FuryGreenwood");
         }
-        private void discordBtn_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://discord.gg/XUbuJYbUSG");
-        }
         private void ytBtn_Click(object sender, EventArgs e)
         {
             Process.Start("https://www.youtube.com/channel/UC30r679XKN70OdvHmmMAjcg");

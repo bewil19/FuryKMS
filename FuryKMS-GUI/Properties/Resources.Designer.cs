@@ -63,46 +63,6 @@ namespace FuryKMS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Byte[].
         /// </summary>
-        internal static byte[] _2013 {
-            get {
-                object obj = ResourceManager.GetObject("_2013", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
-        /// </summary>
-        internal static byte[] _2016 {
-            get {
-                object obj = ResourceManager.GetObject("_2016", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
-        /// </summary>
-        internal static byte[] _2019 {
-            get {
-                object obj = ResourceManager.GetObject("_2019", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
-        /// </summary>
-        internal static byte[] _2021 {
-            get {
-                object obj = ResourceManager.GetObject("_2021", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
-        /// </summary>
         internal static byte[] AldotheApache {
             get {
                 object obj = ResourceManager.GetObject("AldotheApache", resourceCulture);
@@ -157,6 +117,16 @@ namespace FuryKMS.Properties {
             get {
                 object obj = ResourceManager.GetObject("Office2019_2021", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] OfficeAutoKMS {
+            get {
+                object obj = ResourceManager.GetObject("OfficeAutoKMS", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

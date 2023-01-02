@@ -136,22 +136,13 @@
   <data name="Office2019_2021" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Office2019_2021.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="OfficeAutoKMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Batchs\OfficeAutoKMS.bat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="whiteIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\whiteIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WinAutoKMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Batchs\WinAutoKMS.bat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="_2013" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Batchs\2013.bat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="_2016" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Batchs\2016.bat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="_2019" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Batchs\2019.bat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="_2021" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Batchs\2021.bat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

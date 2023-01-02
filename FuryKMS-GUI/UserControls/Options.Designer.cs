@@ -35,7 +35,6 @@
             this.updatesBtn = new FontAwesome.Sharp.IconButton();
             this.contactLbl = new System.Windows.Forms.Label();
             this.gitBtn = new FontAwesome.Sharp.IconButton();
-            this.discordBtn = new FontAwesome.Sharp.IconButton();
             this.ytBtn = new FontAwesome.Sharp.IconButton();
             this.paypalBtn = new FontAwesome.Sharp.IconButton();
             this.aboutLbl = new System.Windows.Forms.Label();
@@ -136,27 +135,6 @@
             this.gitBtn.UseVisualStyleBackColor = false;
             this.gitBtn.Click += new System.EventHandler(this.gitBtn_Click);
             // 
-            // discordBtn
-            // 
-            this.discordBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(93)))), ((int)(((byte)(234)))));
-            this.discordBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.discordBtn.FlatAppearance.BorderSize = 0;
-            this.discordBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.discordBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.discordBtn.ForeColor = System.Drawing.Color.White;
-            this.discordBtn.IconChar = FontAwesome.Sharp.IconChar.Discord;
-            this.discordBtn.IconColor = System.Drawing.Color.White;
-            this.discordBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.discordBtn.IconSize = 40;
-            this.discordBtn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.discordBtn.Location = new System.Drawing.Point(19, 339);
-            this.discordBtn.Name = "discordBtn";
-            this.discordBtn.Size = new System.Drawing.Size(250, 40);
-            this.discordBtn.TabIndex = 13;
-            this.discordBtn.Text = "Discord";
-            this.discordBtn.UseVisualStyleBackColor = false;
-            this.discordBtn.Click += new System.EventHandler(this.discordBtn_Click);
-            // 
             // ytBtn
             // 
             this.ytBtn.BackColor = System.Drawing.Color.Red;
@@ -170,7 +148,7 @@
             this.ytBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ytBtn.IconSize = 40;
             this.ytBtn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.ytBtn.Location = new System.Drawing.Point(19, 385);
+            this.ytBtn.Location = new System.Drawing.Point(19, 339);
             this.ytBtn.Name = "ytBtn";
             this.ytBtn.Size = new System.Drawing.Size(250, 40);
             this.ytBtn.TabIndex = 14;
@@ -191,7 +169,7 @@
             this.paypalBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.paypalBtn.IconSize = 40;
             this.paypalBtn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.paypalBtn.Location = new System.Drawing.Point(19, 431);
+            this.paypalBtn.Location = new System.Drawing.Point(19, 385);
             this.paypalBtn.Name = "paypalBtn";
             this.paypalBtn.Size = new System.Drawing.Size(250, 40);
             this.paypalBtn.TabIndex = 15;
@@ -223,7 +201,7 @@
             this.msBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.msBtn.IconSize = 40;
             this.msBtn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.msBtn.Location = new System.Drawing.Point(19, 477);
+            this.msBtn.Location = new System.Drawing.Point(19, 431);
             this.msBtn.Name = "msBtn";
             this.msBtn.Size = new System.Drawing.Size(250, 40);
             this.msBtn.TabIndex = 17;
@@ -276,7 +254,7 @@
             this.serversBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.serversBtn.IconSize = 40;
             this.serversBtn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.serversBtn.Location = new System.Drawing.Point(19, 523);
+            this.serversBtn.Location = new System.Drawing.Point(19, 477);
             this.serversBtn.Name = "serversBtn";
             this.serversBtn.Size = new System.Drawing.Size(250, 40);
             this.serversBtn.TabIndex = 21;
@@ -297,7 +275,6 @@
             this.Controls.Add(this.aboutLbl);
             this.Controls.Add(this.paypalBtn);
             this.Controls.Add(this.ytBtn);
-            this.Controls.Add(this.discordBtn);
             this.Controls.Add(this.gitBtn);
             this.Controls.Add(this.contactLbl);
             this.Controls.Add(this.updatesBtn);
@@ -321,7 +298,6 @@
         private FontAwesome.Sharp.IconButton updatesBtn;
         private System.Windows.Forms.Label contactLbl;
         private FontAwesome.Sharp.IconButton gitBtn;
-        private FontAwesome.Sharp.IconButton discordBtn;
         private FontAwesome.Sharp.IconButton ytBtn;
         private FontAwesome.Sharp.IconButton paypalBtn;
         private System.Windows.Forms.Label aboutLbl;

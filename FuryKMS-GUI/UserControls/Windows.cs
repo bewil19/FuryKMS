@@ -132,7 +132,6 @@ namespace FuryKMS.UserControls
         }
         private void ActivationCommands()
         {
-            Cursor.Current = Cursors.WaitCursor;
             switch (serversDrop.SelectedIndex)
             {
                 case 0:
@@ -154,6 +153,7 @@ namespace FuryKMS.UserControls
                         Process.Start(batFileName);
                     }
                     catch { }
+
                     break;
                 case 1:
                     shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms.digiboy.ir:1688; cscript //nologo slmgr.vbs /ato");
@@ -198,7 +198,6 @@ namespace FuryKMS.UserControls
                     shellText.Text = RunCommands("cscript //nologo slmgr.vbs /skms kms8.msguides.com:1688; cscript //nologo slmgr.vbs /ato");
                     break;
             }
-            Cursor.Current = Cursors.Default;
         }
         private void renewBtn_Click(object sender, EventArgs e)
         {
