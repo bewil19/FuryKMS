@@ -228,7 +228,7 @@
             this.rightsLbl.Name = "rightsLbl";
             this.rightsLbl.Size = new System.Drawing.Size(205, 27);
             this.rightsLbl.TabIndex = 19;
-            this.rightsLbl.Text = "FURY GREENWOOD - 2022";
+            this.rightsLbl.Text = "FURY GREENWOOD - 2023";
             // 
             // infoLbl
             // 
