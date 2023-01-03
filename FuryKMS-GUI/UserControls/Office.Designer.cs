@@ -210,6 +210,7 @@
             this.productsDrop.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productsDrop.FormattingEnabled = true;
             this.productsDrop.Items.AddRange(new object[] {
+            "Microsoft Office 365",
             "Microsoft Office Standard - Profesional Plus 2021",
             "Microsoft Office Standard - Profesional Plus 2019",
             "Microsoft Office Standard - Profesional Plus 2016",

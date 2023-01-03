@@ -4,6 +4,7 @@ using Microsoft.Win32;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Drawing.Printing;
 using System.Globalization;
 using System.IO;
 using System.Management.Automation;
@@ -94,24 +95,29 @@ namespace FuryKMS.UserControls
             {
                 Directory.SetCurrentDirectory(office15x86);
             }
-            if (officeId.Contains("2021"))
+            if (officeId.Contains("365"))
             {
                 productsDrop.SelectedIndex = 0;
-                officeLogo.Image = Resources.Office2019_2021;
+                officeLogo.Image = Resources.microsoft365;
             }
-            if (officeId.Contains("2019"))
+            if (officeId.Contains("2021"))
             {
                 productsDrop.SelectedIndex = 1;
                 officeLogo.Image = Resources.Office2019_2021;
             }
-            if (officeId.Contains("2016"))
+            if (officeId.Contains("2019"))
             {
                 productsDrop.SelectedIndex = 2;
+                officeLogo.Image = Resources.Office2019_2021;
+            }
+            if (officeId.Contains("2016"))
+            {
+                productsDrop.SelectedIndex = 3;
                 officeLogo.Image = Resources.Office2013_2016;
             }
             if (officeId.Contains("2013"))
             {
-                productsDrop.SelectedIndex = 3;
+                productsDrop.SelectedIndex = 4;
                 officeLogo.Image = Resources.Office2013_2016;
             }
 
@@ -126,6 +132,22 @@ namespace FuryKMS.UserControls
 
             verLbl.Text = Lang.verLbl + officeVer;
             // Office MSI Here
+        }
+
+        private void Clear365()
+        {
+            shellText.Text = RunCommands("cscript //nologo ospp.vbs /unpkey:BTDRB; cscript //nologo ospp.vbs /unpkey:KHGM9; cscript //nologo ospp.vbs /unpkey:CPQVG");
+        }
+
+        private void RemoveAll()
+        {
+            // Remove all Trial Licenses
+            shellText.AppendText(Lang.removingTRIAL);
+            shellText.Text = RunCommands("cscript //nologo ospp.vbs /unpkey:PG343; cscript //nologo ospp.vbs /unpkey:8MBCX; cscript //nologo ospp.vbs /unpkey:27GXM");
+            Clear365();
+            // Remove all Generic Licenses
+            shellText.AppendText(Lang.removingGeneric);
+            shellText.Text = RunCommands("cscript //nologo ospp.vbs /unpkey:6F7TH; cscript //nologo ospp.vbs /unpkey:6MWKP; cscript //nologo ospp.vbs /unpkey:WFG99; cscript //nologo ospp.vbs /unpkey:GVGXT");
         }
 
         private void FinalStep()
@@ -200,25 +222,32 @@ namespace FuryKMS.UserControls
         private void activateBtn_Click(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
+            RemoveAll();
             shellText.Text = RunCommands("cscript //nologo slmgr.vbs /ckms; cscript //nologo ospp.vbs /setprt:1688");
             switch (productsDrop.SelectedIndex)
             {
-                case 0: // 2021
+                case 0: // 365
+                    shellText.Text = RunCommands("cmd /c \"for /f %x in ('dir /b ..\\root\\Licenses16\\proplusvl_kms*.xrm-ms') do cscript ospp.vbs /inslic:..\\root\\Licenses16\\%x\"; cscript ospp.vbs /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99");
+                    Clear365();
+                    FinalStep();
+                    break;
+
+                case 1: // 2021
                     shellText.Text = RunCommands("cmd /c \"for /f %x in ('dir /b ..\\root\\Licenses16\\ProPlus2021VL_KMS*.xrm-ms') do cscript ospp.vbs /inslic:..\\root\\Licenses16\\%x\"; cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH");
                     FinalStep();
                     break;
 
-                case 1: // 2019
+                case 2: // 2019
                     shellText.Text = RunCommands("cmd /c \"for /f %x in ('dir /b ..\\root\\Licenses16\\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:..\\root\\Licenses16\\%x\"; cscript ospp.vbs /inpkey:NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP");
                     FinalStep();
                     break;
 
-                case 2: // 2016
+                case 3: // 2016
                     shellText.Text = RunCommands("cmd /c \"for /f %x in ('dir /b ..\\root\\Licenses16\\proplusvl_kms*.xrm-ms') do cscript ospp.vbs /inslic:..\\root\\Licenses16\\%x\"; cscript ospp.vbs /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99");
                     FinalStep();
                     break;
 
-                case 3: // 2013
+                case 4: // 2013
                     shellText.Text = RunCommands("cscript ospp.vbs /inpkey:YC7DK-G2NP3-2QQC3-J6H88-GVGXT");
                     FinalStep();
                     break;
@@ -251,7 +280,7 @@ namespace FuryKMS.UserControls
             {
                 shellText.Text = RunCommands("cscript //nologo ospp.vbs /unpkey:6MWKP");
             }
-            if (officeId.Contains("2016"))
+            if (officeId.Contains("2016") && officeId.Contains("365"))
             {
                 shellText.Text = RunCommands("cscript //nologo ospp.vbs /unpkey:WFG99");
             }
@@ -264,12 +293,7 @@ namespace FuryKMS.UserControls
         private void removeAllBtn_Click(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
-            // Remove all Trial Licenses
-            shellText.AppendText(Lang.removingTRIAL);
-            shellText.Text = RunCommands("cscript //nologo ospp.vbs /unpkey:PG343; cscript //nologo ospp.vbs /unpkey:8MBCX; cscript //nologo ospp.vbs /unpkey:BTDRB; cscript //nologo ospp.vbs /unpkey:27GXM");
-            // Remove all Generic Licenses
-            shellText.AppendText(Lang.removingGeneric);
-            shellText.Text = RunCommands("cscript //nologo ospp.vbs /unpkey:6F7TH; cscript //nologo ospp.vbs /unpkey:6MWKP; cscript //nologo ospp.vbs /unpkey:WFG99; cscript //nologo ospp.vbs /unpkey:GVGXT");
+            RemoveAll();
             Cursor.Current = Cursors.Default;
         }
 
@@ -277,19 +301,23 @@ namespace FuryKMS.UserControls
         {
             switch (productsDrop.SelectedIndex)
             {
-                case 0: // 2021
+                case 0: // 365
                     serversDrop.Enabled = true;
                     break;
 
-                case 1: // 2019
+                case 1: // 2021
                     serversDrop.Enabled = true;
                     break;
 
-                case 2: // 2016
+                case 2: // 2019
                     serversDrop.Enabled = true;
                     break;
 
-                case 3: // 2013
+                case 3: // 2016
+                    serversDrop.Enabled = true;
+                    break;
+
+                case 4: // 2013
                     serversDrop.Enabled = true;
                     break;
             }

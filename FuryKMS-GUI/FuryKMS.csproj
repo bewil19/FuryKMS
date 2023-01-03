@@ -207,6 +207,7 @@
     <Content Include="Assets\colorIcon.png" />
     <Content Include="Assets\icon.ico" />
     <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\microsoft365.png" />
     <Content Include="Assets\Office2013_2016.png" />
     <Content Include="Assets\Office2019_2021.png" />
     <Content Include="Assets\whiteIcon.png" />
